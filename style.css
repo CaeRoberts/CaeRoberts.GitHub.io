@@ -13,10 +13,11 @@ a {
   color: azure;
   font-family: "Roboto", sans-serif;
   border: 2px solid #ffffff;
-  display: block;
+  display: flex;
   padding: 10px 20px;
   margin-bottom: 15px;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .border {
