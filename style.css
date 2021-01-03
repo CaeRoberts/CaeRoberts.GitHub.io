@@ -40,6 +40,50 @@ h2 {
 p {
   font-family: "Roboto";
 }
+/* Buttons */
+
+button {
+  color: azure;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #ffffff;
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  max-width: 450px;
+  min-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0);
+}
+
+button:hover {
+  box-shadow: inset 0 0 0 3px #ffffff;
+  background-color: azure;
+  color: #007cba;
+}
+.backBtn:hover {
+  box-shadow: inset 0 0 0 3px #ffffff;
+  background-color: azure;
+  color: #007cba;
+}
+
+#backButton1 {
+  max-width: 310px;
+  min-width: 310px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #007cba;
+  border-color: #007cba;
+}
+#backButton1:hover {
+  box-shadow: inset 0 0 0 3px #ffffff;
+  background-color: #007cba;
+  color: azure;
+}
+
+/* Buttons */
 
 a.border:hover {
   box-shadow: inset 0 0 0 3px #ffffff;
@@ -95,7 +139,7 @@ iframe {
 }
 
 .Portfolio {
-  display: block;
+  display: none;
   min-height: 100vh;
   max-width: 80vh;
   text-align: center;
@@ -105,10 +149,10 @@ iframe {
 }
 
 .about {
-  display: block;
+  display: none;
   max-height: 120vh;
   min-height: 100vh;
-  max-width: 500px;
+  max-width: 30vw;
   text-align: center;
   color: azure;
   margin-left: auto;
@@ -116,9 +160,10 @@ iframe {
 }
 
 .aboutBox {
-  display: block;
-  max-width: 50vh;
-  min-width: 40vh;
+  display: none;
+  max-width: 450px;
+  min-width: 30vw;
+  /* width: 40vw; */
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   margin-left: auto;
@@ -129,6 +174,12 @@ iframe {
 
 .border2 {
   /* max-width: 50%; */
+  width: 30%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.backBtn {
   width: 30%;
   display: inline-block;
   margin-left: 20px;
@@ -160,10 +211,9 @@ iframe {
   margin-top: 7vh;
 }
 .CaeFlying {
-  max-width: 30vh;
-  min-width: 15vh;
+  max-width: 250px;
   margin-bottom: 15px;
-  margin-top: 7vh;
+  margin-top: 2vh;
   border-radius: 10px;
 }
 
