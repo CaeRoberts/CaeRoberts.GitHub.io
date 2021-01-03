@@ -166,6 +166,13 @@ iframe {
   margin-top: 7vh;
   border-radius: 10px;
 }
+
+.AirportReviewImage {
+  max-width: 100px;
+  margin-bottom: 15px;
+  margin-top: 7vh;
+  border-radius: 10px;
+}
 .socials {
   padding: 10px 5px;
 
