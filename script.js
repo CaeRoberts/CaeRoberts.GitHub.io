@@ -54,3 +54,11 @@ backButton1.addEventListener("click", function () {
   console.log(`Logo Button Working`);
   goBack();
 });
+
+// Semantic wEb
+
+// psuedo selectors
+
+// DIV and SPan //
+
+// closure JS
