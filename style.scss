@@ -1,0 +1,385 @@
+$link-text-color: azure;
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.linksSection {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
+  background-size: 300% 300%;
+  animation: Gradient 10s ease infinite;
+  background-color: #007cba;
+  li {
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  p {
+    font-family: "$standardFont";
+  }
+  a {
+    color: $link-text-color;
+    border: 2px solid$link-text-color;
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  .socials {
+    padding: 10px 5px;
+
+    border: none;
+  }
+
+  .border {
+    color: $link-text-color;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid $link-text-color;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    max-width: 80vw;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Buttons */
+
+  button {
+    color: $link-text-color;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid $link-text-color;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    max-width: 80vw;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  button:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: $link-text-color;
+    color: #007cba;
+  }
+  .backBtn:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: $link-text-color;
+    color: #007cba;
+  }
+
+  #backButton1 {
+    max-width: 310px;
+    min-width: 310px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #007cba;
+    border-color: #007cba;
+  }
+  #backButton1:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: #007cba;
+    color: $link-text-color;
+  }
+  #backButton2 {
+    max-width: 310px;
+    min-width: 310px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #007cba;
+    border-color: #007cba;
+  }
+  #backButton2:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: #007cba;
+    color: $link-text-color;
+  }
+
+  /* Buttons */
+
+  a.border:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: azure;
+    color: #007cba;
+  }
+
+  a.border2:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: azure;
+    color: #007cba;
+  }
+  .border3:hover {
+    box-shadow: inset 0 0 0 3px #f0ad1d;
+    background-color: #f0ad1d;
+    color: white;
+    font-weight: bold;
+  }
+  a.border4:hover {
+    box-shadow: inset 0 0 0 3px #ffffff;
+    background-color: #007cba;
+    color: azure;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  iframe {
+    max-width: 440px;
+    max-height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    align-content: center;
+  }
+
+  .frontpage {
+    display: block;
+    min-height: 80vh;
+    max-width: 500px;
+    text-align: center;
+    color: azure;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Portfolio {
+    display: none;
+    min-height: 100vh;
+    max-width: 80vh;
+    text-align: center;
+    color: azure;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about {
+    display: none;
+    max-height: 120vh;
+    min-height: 100vh;
+    max-width: 30vw;
+    text-align: center;
+    color: azure;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutBox {
+    display: none;
+    max-width: 400px;
+    min-width: 30vw;
+    /* width: 40vw; */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    color: #007cba;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .Langsec {
+    display: none;
+    max-height: 120vh;
+    min-height: 100vh;
+    max-width: 30vw;
+    text-align: center;
+    color: azure;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Langbox {
+    display: none;
+    max-width: 400px;
+    min-width: 30vw;
+    /* width: 40vw; */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    color: #007cba;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    .fab {
+      font-size: 9em;
+      display: inline-block;
+    }
+    .fab:hover {
+      color: #0eb96a;
+    }
+  }
+
+  .border2 {
+    /* max-width: 50%; */
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .backBtn {
+    width: 30%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .border3 {
+    /* max-width: 50%; */
+    color: $link-text-color;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid $link-text-color;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    max-width: 80vw;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .border4 {
+    /* max-width: 50%; */
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #007cba;
+    border-color: #007cba;
+  }
+
+  .logo {
+    max-width: 250px;
+    margin-bottom: 15px;
+    margin-top: 7vh;
+  }
+  .CaeFlying {
+    max-width: 250px;
+    margin-bottom: 15px;
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
+
+  .wrapper {
+    color: azure;
+  }
+}
+.portfolioArea {
+  height: 100vh;
+  max-width: 100vh;
+  background-color: #ffffff;
+  h2 {
+    font-family: "Roboto";
+  }
+
+  li {
+    border: 2px, thick, rgb(0, 0, 0);
+    height: 20vh;
+    width: 20vh;
+    display: table-column;
+  }
+
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+}
+
+.FlashcardsJS {
+  max-height: 100vh;
+}
+
+.model3 {
+  max-height: 100vh;
+}
+
+.chat {
+  max-height: 100vh;
+}
+
+.pomodoro {
+  height: 100vh;
+}
+
+.linksPage {
+  height: 100vh;
+}

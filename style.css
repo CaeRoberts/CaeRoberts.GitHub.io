@@ -1,18 +1,44 @@
 body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.linksSection {
+  min-height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
   background-size: 300% 300%;
-  animation: Gradient 10s ease infinite;
+  -webkit-animation: Gradient 10s ease infinite;
+          animation: Gradient 10s ease infinite;
   background-color: #007cba;
-  text-align: center;
-  color: azure;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
+  /* Buttons */
+  /* Buttons */
 }
-a {
-  color: azure;
+
+.linksSection li {
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.linksSection h2 {
   font-family: "Roboto", sans-serif;
-  border: 2px solid #ffffff;
+}
+
+.linksSection p {
+  font-family: "$standardFont";
+}
+
+.linksSection a {
+  color: azure;
+  border: 2px solid azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 20px;
   margin-bottom: 15px;
@@ -20,10 +46,15 @@ a {
   text-decoration: none;
 }
 
-.border {
+.linksSection .socials {
+  padding: 10px 5px;
+  border: none;
+}
+
+.linksSection .border {
   color: azure;
   font-family: "Roboto", sans-serif;
-  border: 2px solid #ffffff;
+  border: 2px solid azure;
   display: block;
   padding: 10px 20px;
   margin-bottom: 15px;
@@ -34,29 +65,10 @@ a {
   margin-right: auto;
 }
 
-li {
-  list-style: none;
-  margin: 10px 30px;
-  display: inline-block;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-h2 {
-  font-family: "Roboto";
-}
-
-p {
-  font-family: "Roboto";
-}
-/* Buttons */
-
-button {
+.linksSection button {
   color: azure;
   font-family: "Roboto", sans-serif;
-  border: 2px solid #ffffff;
+  border: 2px solid azure;
   display: block;
   padding: 10px 20px;
   margin-bottom: 15px;
@@ -68,18 +80,21 @@ button {
   background: rgba(255, 255, 255, 0);
 }
 
-button:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
-  background-color: azure;
-  color: #007cba;
-}
-.backBtn:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
+.linksSection button:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
   background-color: azure;
   color: #007cba;
 }
 
-#backButton1 {
+.linksSection .backBtn:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
+  background-color: azure;
+  color: #007cba;
+}
+
+.linksSection #backButton1 {
   max-width: 310px;
   min-width: 310px;
   display: inline-block;
@@ -88,32 +103,56 @@ button:hover {
   color: #007cba;
   border-color: #007cba;
 }
-#backButton1:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
+
+.linksSection #backButton1:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
   background-color: #007cba;
   color: azure;
 }
 
-/* Buttons */
-
-a.border:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
-  background-color: azure;
+.linksSection #backButton2 {
+  max-width: 310px;
+  min-width: 310px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #007cba;
+  border-color: #007cba;
 }
 
-a.border2:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
+.linksSection #backButton2:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
+  background-color: #007cba;
+  color: azure;
+}
+
+.linksSection a.border:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
   background-color: azure;
   color: #007cba;
 }
-a.border3:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
+
+.linksSection a.border2:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
   background-color: azure;
   color: #007cba;
 }
-a.border4:hover {
-  box-shadow: inset 0 0 0 3px #ffffff;
+
+.linksSection .border3:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #f0ad1d;
+          box-shadow: inset 0 0 0 3px #f0ad1d;
+  background-color: #f0ad1d;
+  color: white;
+  font-weight: bold;
+}
+
+.linksSection a.border4:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
   background-color: #007cba;
   color: azure;
 }
@@ -130,17 +169,18 @@ a.border4:hover {
   }
 }
 
-iframe {
+.linksSection iframe {
   max-width: 440px;
   max-height: 225px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
   border-radius: 10px;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.frontpage {
+.linksSection .frontpage {
   display: block;
   min-height: 80vh;
   max-width: 500px;
@@ -150,7 +190,7 @@ iframe {
   margin-right: auto;
 }
 
-.Portfolio {
+.linksSection .Portfolio {
   display: none;
   min-height: 100vh;
   max-width: 80vh;
@@ -160,7 +200,7 @@ iframe {
   margin-right: auto;
 }
 
-.about {
+.linksSection .about {
   display: none;
   max-height: 120vh;
   min-height: 100vh;
@@ -171,7 +211,7 @@ iframe {
   margin-right: auto;
 }
 
-.aboutBox {
+.linksSection .aboutBox {
   display: none;
   max-width: 400px;
   min-width: 30vw;
@@ -182,32 +222,74 @@ iframe {
   margin-right: auto;
   color: #007cba;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.border2 {
+.linksSection .Langsec {
+  display: none;
+  max-height: 120vh;
+  min-height: 100vh;
+  max-width: 30vw;
+  text-align: center;
+  color: azure;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linksSection .Langbox {
+  display: none;
+  max-width: 400px;
+  min-width: 30vw;
+  /* width: 40vw; */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  color: #007cba;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.linksSection .Langbox .fab {
+  font-size: 9em;
+  display: inline-block;
+}
+
+.linksSection .Langbox .fab:hover {
+  color: #0eb96a;
+}
+
+.linksSection .border2 {
   /* max-width: 50%; */
   width: 20%;
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 }
-.backBtn {
+
+.linksSection .backBtn {
   width: 30%;
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.border3 {
+.linksSection .border3 {
   /* max-width: 50%; */
-  width: 80%;
-  height: 15vh;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
+  color: azure;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid azure;
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  max-width: 80vw;
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.border4 {
+.linksSection .border4 {
   /* max-width: 50%; */
   width: 20%;
   display: inline-block;
@@ -217,30 +299,111 @@ iframe {
   border-color: #007cba;
 }
 
-.logo {
+.linksSection .logo {
   max-width: 250px;
   margin-bottom: 15px;
   margin-top: 7vh;
 }
-.CaeFlying {
+
+.linksSection .CaeFlying {
   max-width: 250px;
   margin-bottom: 15px;
   margin-top: 2vh;
   border-radius: 10px;
 }
 
-.AirportReviewImage {
-  max-width: 100px;
-  margin-bottom: 15px;
-  margin-top: 7vh;
-  border-radius: 10px;
-}
-.socials {
-  padding: 10px 5px;
-
-  border: none;
-}
-
-.wrapper {
+.linksSection .wrapper {
   color: azure;
 }
+
+.portfolioArea {
+  height: 100vh;
+  max-width: 100vh;
+  background-color: #ffffff;
+  /* Add padding BETWEEN each column (if you want) */
+  /* Create four equal columns that floats next to each other */
+  /* Clear floats after rows */
+  /* Content */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+
+.portfolioArea h2 {
+  font-family: "Roboto";
+}
+
+.portfolioArea li {
+  border: 2px, thick, black;
+  height: 20vh;
+  width: 20vh;
+  display: table-column;
+}
+
+.portfolioArea body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.portfolioArea h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.portfolioArea .row {
+  margin: 8px -16px;
+}
+
+.portfolioArea .row,
+.portfolioArea .row > .column {
+  padding: 8px;
+}
+
+.portfolioArea .column {
+  float: left;
+  width: 25%;
+}
+
+.portfolioArea .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.portfolioArea .content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolioArea .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolioArea .column {
+    width: 100%;
+  }
+}
+
+.FlashcardsJS {
+  max-height: 100vh;
+}
+
+.model3 {
+  max-height: 100vh;
+}
+
+.chat {
+  max-height: 100vh;
+}
+
+.pomodoro {
+  height: 100vh;
+}
+
+.linksPage {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
