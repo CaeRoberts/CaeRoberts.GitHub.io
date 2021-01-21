@@ -295,11 +295,15 @@ body {
   }
 }
 .portfolioArea {
-  height: 100vh;
+  max-height: 100vh;
   max-width: 100vh;
   background-color: #ffffff;
+  text-align: center;
+  display: inline;
   h2 {
     font-family: "Roboto";
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   li {
@@ -313,6 +317,7 @@ body {
     background-color: #f1f1f1;
     padding: 20px;
     font-family: Arial;
+    text-align: center;
   }
 
   h1 {
@@ -334,6 +339,7 @@ body {
   .column {
     float: left;
     width: 25%;
+    border: 2px black;
   }
 
   /* Clear floats after rows */
@@ -347,6 +353,7 @@ body {
   .content {
     background-color: white;
     padding: 10px;
+    border: 2px #000000;
   }
 
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -359,7 +366,7 @@ body {
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 100vw;
     }
   }
 }
@@ -378,6 +385,8 @@ body {
 
 .pomodoro {
   height: 100vh;
+  display: inline-block;
+  text-align: center;
 }
 
 .linksPage {

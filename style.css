@@ -317,9 +317,11 @@ body {
 }
 
 .portfolioArea {
-  height: 100vh;
+  max-height: 100vh;
   max-width: 100vh;
   background-color: #ffffff;
+  text-align: center;
+  display: inline;
   /* Add padding BETWEEN each column (if you want) */
   /* Create four equal columns that floats next to each other */
   /* Clear floats after rows */
@@ -330,6 +332,8 @@ body {
 
 .portfolioArea h2 {
   font-family: "Roboto";
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .portfolioArea li {
@@ -343,6 +347,7 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
   font-family: Arial;
+  text-align: center;
 }
 
 .portfolioArea h1 {
@@ -362,6 +367,7 @@ body {
 .portfolioArea .column {
   float: left;
   width: 25%;
+  border: 2px black;
 }
 
 .portfolioArea .row:after {
@@ -373,6 +379,7 @@ body {
 .portfolioArea .content {
   background-color: white;
   padding: 10px;
+  border: 2px #000000;
 }
 
 @media screen and (max-width: 900px) {
@@ -383,7 +390,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .portfolioArea .column {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -401,6 +408,8 @@ body {
 
 .pomodoro {
   height: 100vh;
+  display: inline-block;
+  text-align: center;
 }
 
 .linksPage {
