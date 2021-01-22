@@ -295,11 +295,11 @@ body {
   }
 }
 .portfolioArea {
-  max-height: 100vh;
+  height: fit-content;
   max-width: 100vh;
   background-color: #ffffff;
   text-align: center;
-  display: inline;
+  display: inline-block;
   h2 {
     font-family: "Roboto";
     padding-top: 50px;
@@ -413,24 +413,29 @@ body {
   }
 }
 
-.FlashcardsJS {
-  max-height: 100vh;
-}
+.contact {
+  height: fit-content;
+  display: inline;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .spacer {
+    height: 200px;
+  }
+  h2 {
+    padding-top: 80px;
+  }
 
-.model3 {
-  max-height: 100vh;
-}
-
-.chat {
-  max-height: 100vh;
-}
-
-.pomodoro {
-  height: 100vh;
-  display: inline-block;
-  text-align: center;
-}
-
-.linksPage {
-  height: 100vh;
+  li {
+    list-style: none;
+    display: inline;
+    padding-bottom: -20px;
+  }
+  #contactInfo {
+    display: inline-flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+  }
+  #contactDetails {
+    padding-right: 20px;
+    vertical-align: middle;
+  }
 }

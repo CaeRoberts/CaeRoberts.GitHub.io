@@ -118,7 +118,7 @@ pomobtn.onclick = function () {
 };
 portbtn.onclick = function () {
   portModal.style.display = "block";
-  console.log(`=portBtn Working`);
+  console.log(`portBtn Working`);
 };
 
 // When the user clicks on <span> (x), close the modal

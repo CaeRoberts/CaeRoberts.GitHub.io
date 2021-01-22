@@ -317,11 +317,13 @@ body {
 }
 
 .portfolioArea {
-  max-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   max-width: 100vh;
   background-color: #ffffff;
   text-align: center;
-  display: inline;
+  display: inline-block;
   /* The Modal (background) */
   /* Modal Content/Box */
   /* The Close Button */
@@ -337,6 +339,11 @@ body {
   font-family: "Roboto";
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+.portfolioArea #portfolioModal,
+.portfolioArea #pomodoroModal {
+  display: none;
 }
 
 .portfolioArea .modal {
@@ -445,25 +452,41 @@ body {
   }
 }
 
-.FlashcardsJS {
-  max-height: 100vh;
+.contact {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.model3 {
-  max-height: 100vh;
+.contact .spacer {
+  height: 200px;
 }
 
-.chat {
-  max-height: 100vh;
+.contact h2 {
+  padding-top: 80px;
 }
 
-.pomodoro {
-  height: 100vh;
-  display: inline-block;
-  text-align: center;
+.contact li {
+  list-style: none;
+  display: inline;
+  padding-bottom: -20px;
 }
 
-.linksPage {
-  height: 100vh;
+.contact #contactInfo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact #contactDetails {
+  padding-right: 20px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */
