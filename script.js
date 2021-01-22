@@ -100,64 +100,41 @@ pomodoroBtn.addEventListener("click", function () {
   console.log(`Pomodoro Button Working`);
 });
 
-// const portfolioBtn = document.getElementById("Portfolio-Btn");
-// const aboutBtn = document.getElementById("About-Btn");
-// const logoBtn = document.getElementById("Logo");
-// const backButton = document.getElementById("backButton");
-// const backButton1 = document.getElementById("backButton1");
+// Get the modal
+var pomoModal = document.getElementById("pomodoroModal");
+var portModal = document.getElementById("portfolioModal");
 
-// /////////////////
-// // Open Events//
-// ////////////////
-// const portfolioOpen = function () {
-//   document.getElementById("Portfolio-Section").style.display = "block";
-//   document.getElementById("frontpage").style.display = "none";
-// };
+// Get the button that opens the modal
+var pomobtn = document.getElementById("PomodoroModalBtn");
+var portbtn = document.getElementById("PortfolioModalBtn");
 
-// const aboutOpen = function () {
-//   document.getElementById("About-Section").style.display = "block";
-//   document.getElementById("About-Box").style.display = "block";
-//   document.getElementById("frontpage").style.display = "none";
-// };
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-// const goBack = function () {
-//   document.getElementById("Portfolio-Section").style.display = "none";
-//   document.getElementById("About-Section").style.display = "none";
-//   document.getElementById("frontpage").style.display = "block";
-// };
-// /////////////////
-// // Button Area //
-// /////////////////
+// When the user clicks on the button, open the modal
+pomobtn.onclick = function () {
+  pomoModal.style.display = "block";
+  console.log(`pomoBtn Working`);
+};
+portbtn.onclick = function () {
+  portModal.style.display = "block";
+  console.log(`=portBtn Working`);
+};
 
-// portfolioBtn.addEventListener("click", function () {
-//   console.log(`Portfolio Button Working`);
-//   portfolioOpen();
-// });
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  pomoModal.style.display = "none";
+  portModal.style.display = "none";
+  console.log(`Span Working`);
+};
 
-// logoBtn.addEventListener("click", function () {
-//   console.log(`Logo Button Working`);
-//   goBack();
-// });
-
-// aboutBtn.addEventListener("click", function () {
-//   console.log(`About Button Working`);
-//   aboutOpen();
-// });
-
-// backButton.addEventListener("click", function () {
-//   console.log(`Logo Button Working`);
-//   goBack();
-// });
-
-// backButton1.addEventListener("click", function () {
-//   console.log(`Back Button(A) Working`);
-//   goBack();
-// });
-
-// Semantic wEb
-
-// psuedo selectors
-
-// DIV and SPan //
-
-// closure JS
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == pomoModal) {
+    pomoModal.style.display = "none";
+    console.log(`Pomowindow Working`);
+  } else if (event.target == portModal) {
+    portModal.style.display = "none";
+    console.log(`Portwindow Working`);
+  }
+};

@@ -187,35 +187,78 @@
     </div>
     <div class="portfolioArea">
       <h2>Portfolio</h2>
-      <div class="column">
+      <!-----------------POMODORO------------------->
+      <div class="column" id="column-pomodoro">
         <div class="content">
-          <img src="PomodoroWebsite.png" alt="Mountains" style="width: 100%" />
-          <h3>Pomodoro Timer</h3>
-          <p>
-            I built the Pomodoro Timer / To - do list to help me stay productive
-            throughout my JavaScript & Aviation studies. <br />
-            It also came in quite handy to add into my portfolio.
-          </p>
+          <button id="PomodoroModalBtn">
+            <img
+              src="PomodoroWebsite.png"
+              alt="Mountains"
+              style="width: 100%"
+            />
+
+            <h3>Pomodoro Timer</h3>
+            <p>
+              I built the Pomodoro Timer / To - do list to help me stay
+              productive throughout my JavaScript & Aviation studies. <br />
+              It also came in quite handy to add into my portfolio.
+            </p>
+          </button>
           <a href=""> Live Website</a>
           <a href=""> GitHub Repository</a>
           <a href=""> Read Me</a>
+          <div id="pomodoroModal" class="modal">
+            <span class="pomoclose">&times;</span>
+            <div class="modal-content">
+              <img
+                src="PomodoroWebsite.png"
+                alt="Mountains"
+                style="width: 50%"
+              />
+              <h2>Pomodoro Timer & To-do list</h2>
+              <h3>Purpose</h3>
+              <p>
+                As previously mentioned the website serves two functions; a
+                links page that highlights my social medias, portfolio and
+                development career, and as a portfolio for my most recent
+                development works.
+              </p>
+              <h3>Languages / Frameworks Used</h3>
+              <p>
+                This website uses standard vanilla JavaScript for the
+                functionality of the buttons / display. The website is built on
+                VSCode using HTML and CSS with a pre-compiler of SASS to write
+                cleaner, more legible styling.
+              </p>
+              <div class="portfolioLinks">
+                <a href=""> Live Website</a>
+                <a href=""> GitHub Repository</a>
+                <a href=""> Read Me</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="column">
+      <!-----------------POMODORO------------------->
+
+      <!--=================================================-->
+      <div class="column" id="column-portfolio">
         <div class="content">
-          <img
-            src="portfolioWebsite.PNG"
-            alt="Portfolio website"
-            style="width: 100%"
-          />
-          <h3>Portfolio Website</h3>
-          <p>
-            I've included this website as part of my portfolio. It serves two
-            purposes -<br />
-            1. a handy quick-to-access links page<br />
-            2. a portfolio website that highlights some of the projects I've
-            made so far
-          </p>
+          <button id="PortfolioModalBtn">
+            <img
+              src="portfolioWebsite.PNG"
+              alt="Portfolio website"
+              style="width: 100%"
+            />
+            <h3>Portfolio Website</h3>
+            <p>
+              I've included this website as part of my portfolio. It serves two
+              purposes -<br />
+              1. a handy quick-to-access links page<br />
+              2. a portfolio website that highlights some of the projects I've
+              made so far
+            </p>
+          </button>
           <a href="https://www.caeroberts.github.io"> Live Website</a>
           <a href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io">
             GitHub Repository</a
@@ -224,130 +267,75 @@
             href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io/blob/main/README.md"
             >Read Me</a
           >
+          <div id="portfolioModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <img
+                src="portfolioWebsite.png"
+                alt="Mountains"
+                style="width: 50%"
+              />
+              <h2>Front End Development Portfolio & Links Page</h2>
+              <h3>Purpose</h3>
+              <p>
+                As previously mentioned the website serves two functions; a
+                links page that highlights my social medias, portfolio and
+                development career, and as a portfolio for my most recent
+                development works.
+              </p>
+              <h3>Languages / Frameworks Used</h3>
+              <p>
+                This website uses standard vanilla JavaScript for the
+                functionality of the buttons / display. The website is built on
+                VSCode using HTML and CSS with a pre-compiler of SASS to write
+                cleaner, more legible styling.
+              </p>
+              <div class="portfolioLinks">
+                <a href=""> Live Website</a>
+                <a href=""> GitHub Repository</a>
+                <a href=""> Read Me</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="column">
+      <div class="column" id="column-flashcards">
         <div class="content">
-          <img src="ComingSoon.png" alt="Nature" style="width: 100%" />
-          <h3>Flashcards.JS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            commodo elementum massa vitae tincidunt. Cras commodo orci non diam
-            tempus semper. Sed et neque vitae nisl volutpat tristique vel ut
-            nisi. Maecenas ac mi non mauris dignissim efficitur nec at libero.
-          </p>
+          <button id="Btn Modal">
+            <img src="ComingSoon.png" alt="Nature" style="width: 100%" />
+            <h3>Flashcards.JS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              commodo elementum massa vitae tincidunt. Cras commodo orci non
+              diam tempus semper. Sed et neque vitae nisl volutpat tristique vel
+              ut nisi. Maecenas ac mi non mauris dignissim efficitur nec at
+              libero.
+            </p>
+          </button>
         </div>
       </div>
-      <div class="column">
+      <div class="column" id="column-flashcards">
         <div class="content">
-          <img src="ComingSoon.png" alt="Mountains" style="width: 100%" />
-          <h3>Chat App</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            commodo elementum massa vitae tincidunt. Cras commodo orci non diam
-            tempus semper. Sed et neque vitae nisl volutpat tristique vel ut
-            nisi. Maecenas ac mi non mauris dignissim efficitur nec at libero.
-          </p>
+          <button id="Btn Modal">
+            <img src="ComingSoon.png" alt="Mountains" style="width: 100%" />
+            <h3>Chat App</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              commodo elementum massa vitae tincidunt. Cras commodo orci non
+              diam tempus semper. Sed et neque vitae nisl volutpat tristique vel
+              ut nisi. Maecenas ac mi non mauris dignissim efficitur nec at
+              libero.
+            </p>
+          </button>
         </div>
       </div>
       <br />
     </div>
-    <!-- <div class="FlashcardsJS">
-      <h2>Flashcards.Js</h2>
-       <h3>An interval timer that helps people focus</h3>
-      <img src="portfolioWebsite.PNG" />
-      <div class="portfolioLinks">
-        <a href=""> Live Website</a>
-        <a href=""> GitHub Repository</a>
-        <a href=""> Read Me</a>
-    </div>
-    <div class="model3">
-      <h2>Mock Tesla Model 3 Website</h2>
-       <h3>An interval timer that helps people focus</h3>
-      <img src="portfolioWebsite.PNG" />
-      <div class="portfolioLinks">
-        <a href=""> Live Website</a>
-        <a href=""> GitHub Repository</a>
-        <a href=""> Read Me</a>
-    </div>
-    <div class="chat">
-      <h2>Chat Web App</h2>
-       <h3>An interval timer that helps people focus</h3>
-      <img src="portfolioWebsite.PNG" />
-      <div class="portfolioLinks">
-        <a href=""> Live Website</a>
-        <a href=""> GitHub Repository</a>
-        <a href=""> Read Me</a>
-    </div> -->
-    <span class="pomodoro">
-      <h2>Pomodoro / To-do list</h2>
-      <h3>An interval timer that helps people focus</h3>
-      <img
-        alt="Pomodoro Website"
-        style="max-width: 500px"
-        src="PomodoroWebsite.png"
-      />
-      <p>
-        I built the Pomodoro Timer / To - do list to help me stay productive
-        throughout my JavaScript & Aviation studies. <br />
-        It also came in quite handy to add into my portfolio.
-      </p>
-      <h3>Purpose</h3>
-      As previously mentioned the website serves two functions; a links page
-      that highlights my social medias, portfolio and development career, and as
-      a portfolio for my most recent development works.
-      <h3>Languages / Frameworks Used</h3>
-      <p>
-        This website uses standard vanilla JavaScript for the functionality of
-        the buttons / display. The website is built on VSCode using HTML and CSS
-        with a pre-compiler of SASS to write cleaner, more legible styling.
-      </p>
-      <div class="portfolioLinks">
-        <a href=""> Live Website</a>
-        <a href=""> GitHub Repository</a>
-        <a href=""> Read Me</a>
-      </div>
-    </span>
-    <br />
-    <span class="linksPage">
-      <h2>Links Page</h2>
-      <h3>A personal links page & developer portfolio</h3>
-      <img
-        alt="Portfolio Website"
-        style="max-width: 500px"
-        src="portfolioWebsite.PNG"
-      />
-      <p>
-        I've included this website as part of my portfolio. It serves two
-        purposes -<br />
-        1. a handy quick-to-access links page<br />
-        2. a portfolio website that highlights some of the projects I've made so
-        far
-      </p>
+    <!---======================================--->
+    <div class="contact"></di>
 
-      <h3>Purpose</h3>
-      As previously mentioned the website serves two functions; a links page
-      that highlights my social medias, portfolio and development career, and as
-      a portfolio for my most recent development works.
-      <h3>Languages / Frameworks Used</h3>
-      <p>
-        This website uses standard vanilla JavaScript for the functionality of
-        the buttons / display. The website is built on VSCode using HTML and CSS
-        with a pre-compiler of SASS to write cleaner, more legible styling.
-      </p>
-      <div class="portfolioLinks"></div>
-      <div class="portfolioLinks">
-        <a href="https://www.caeroberts.github.io"> Live Website</a>
-        <a href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io">
-          GitHub Repository</a
-        >
-        <a
-          href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io/blob/main/README.md"
-          >Read Me</a
-        >
-      </div>
-    </span>
+    <!---======================================--->
     <div class="footer"></div>
-  </body>
+  </body> 
   <script src="script.js"></script>
 </html>
