@@ -300,10 +300,17 @@ body {
   background-color: #ffffff;
   text-align: center;
   display: inline-block;
+
   h2 {
     font-family: "Roboto";
     padding-top: 50px;
     padding-bottom: 20px;
+  }
+  button {
+    border: none;
+    height: 500px;
+    width: fit-content;
+    justify-content: space-evenly;
   }
   #portfolioModal,
   #pomodoroModal {
@@ -368,20 +375,19 @@ body {
   }
 
   .row {
-    margin: 8px -16px;
+    margin: 8px 16px;
   }
 
   /* Add padding BETWEEN each column (if you want) */
   .row,
   .row > .column {
-    padding: 8px;
+    padding: 20px;
   }
 
   /* Create four equal columns that floats next to each other */
   .column {
     float: left;
     width: 25%;
-    border: 2px black;
   }
 
   /* Clear floats after rows */
@@ -394,7 +400,7 @@ body {
   /* Content */
   .content {
     background-color: white;
-    padding: 10px;
+    padding: auto;
     border: 2px #000000;
   }
 
@@ -418,7 +424,7 @@ body {
   display: inline;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   .spacer {
-    height: 200px;
+    height: 100px;
   }
   h2 {
     padding-top: 80px;
@@ -441,5 +447,97 @@ body {
   #contactDetails {
     padding-right: 20px;
     vertical-align: middle;
+  }
+}
+
+.footer {
+  text-size-adjust: auto;
+  height: auto;
+  background-color: #007cba;
+  width: 100vw;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 100;
+
+  .column {
+    padding: 1rem;
+  }
+
+  .footer-container {
+    background-color: #0373ac;
+    align-content: center;
+    display: inline-grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+  }
+
+  .column-2,
+  .column-3,
+  .column-4 {
+    align-items: center;
+    width: 25%;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .footer-container {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .footer-container {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .footer-container {
+      width: 1170px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #footerlanguages {
+      display: none;
+    }
+  }
+  .footer-header {
+    color: #ffffff;
+    font-weight: 100;
+  }
+  .small-footer-header {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 100;
+  }
+
+  .footer-support-text {
+    color: #eff5ef;
+    font-size: 14px;
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .fcc-footer-logo {
+    width: 40px;
+    vertical-align: middle;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
