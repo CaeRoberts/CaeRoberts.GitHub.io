@@ -464,6 +464,18 @@ body {
 
   .column {
     padding: 1rem;
+    text-align: center;
+  }
+  li {
+    list-style: none;
+  }
+  a:link,
+  a:visited {
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
   }
 
   .footer-container {
