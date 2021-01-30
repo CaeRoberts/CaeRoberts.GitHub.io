@@ -334,11 +334,6 @@ body {
   /* Modal Content/Box */
   /* The Close Button */
   /* Add padding BETWEEN each column (if you want) */
-  /* Create four equal columns that floats next to each other */
-  /* Clear floats after rows */
-  /* Content */
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 }
 
 .portfolioArea h2 {
@@ -442,6 +437,7 @@ body {
 .portfolioArea .column {
   float: left;
   width: 25%;
+  grid-column-gap: 20px;
 }
 
 .portfolioArea .row:after {
@@ -452,7 +448,7 @@ body {
 
 .portfolioArea .content {
   background-color: white;
-  padding: auto;
+  padding: 20px;
   border: 2px #000000;
 }
 
@@ -460,11 +456,20 @@ body {
   .portfolioArea .column {
     width: 50%;
   }
+  .portfolioArea .content {
+    padding: 0px;
+  }
+  .portfolioArea #sectionInfo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .portfolioArea .column {
     width: 100vw;
+  }
+  .portfolioArea .content {
+    padding: auto;
   }
 }
 
@@ -504,6 +509,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contact #contactDetails {
