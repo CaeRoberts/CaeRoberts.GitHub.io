@@ -59,7 +59,31 @@ body {
   border: none;
 }
 
+.linksSection .frontpage {
+  display: block;
+  min-height: 80vh;
+  max-width: 500px;
+  text-align: center;
+  color: azure;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .linksSection .border {
+  color: azure;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid azure;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linksSection .border3 {
+  /* max-width: 50%; */
   color: azure;
   font-family: "Roboto", sans-serif;
   border: 2px solid azure;
@@ -67,9 +91,15 @@ body {
   padding: 10px 20px;
   margin-bottom: 15px;
   border-radius: 10px;
-  width: 300px;
+  max-width: 400px;
+  min-width: 350px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.linksSection #LinksPage-Btn {
+  max-width: 400px;
+  min-width: 350px;
 }
 
 .linksSection button {
@@ -80,10 +110,8 @@ body {
   padding: 10px 20px;
   margin-bottom: 15px;
   border-radius: 10px;
-  max-width: 80vw;
+  max-width: 400px;
   min-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
   background: rgba(255, 255, 255, 0);
 }
 
@@ -187,16 +215,6 @@ body {
       align-content: center;
 }
 
-.linksSection .frontpage {
-  display: block;
-  min-height: 80vh;
-  max-width: 500px;
-  text-align: center;
-  color: azure;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .linksSection .Portfolio {
   display: none;
   min-height: 100vh;
@@ -279,20 +297,6 @@ body {
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.linksSection .border3 {
-  /* max-width: 50%; */
-  color: azure;
-  font-family: "Roboto", sans-serif;
-  border: 2px solid azure;
-  display: block;
-  padding: 10px 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .linksSection .border4 {
