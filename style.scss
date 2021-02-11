@@ -278,20 +278,22 @@ body {
         color: #007cba;
       }
       img {
+        max-width: 500px;
+        height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
         border: 5px solid #ffffff;
-        // border-radius: 16px;
+        border-radius: 16px;
         box-shadow: 0 6px 20px 0 #929292;
       }
       @media only screen and (max-width: 480px) {
         img {
           max-width: 350px;
-          margin-left: 2px;
-          margin-right: 2px;
-          border-radius: 2px;
-          box-shadow: none;
+
+          margin-left: auto;
+          margin-right: auto;
+          // box-shadow: none;
         }
         content {
           padding: 0px;
