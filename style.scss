@@ -201,41 +201,40 @@ body {
     border-radius: 10px;
     align-content: center;
   }
-}
 
-.backBtn {
-  width: 30%;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .backBtn {
+    width: 30%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-.border4 {
-  /* max-width: 50%; */
-  width: 20%;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #007cba;
-  border-color: #007cba;
-}
+  .border4 {
+    /* max-width: 50%; */
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #007cba;
+    border-color: #007cba;
+  }
 
-.logo {
-  max-width: 250px;
-  margin-bottom: 15px;
-  margin-top: 7vh;
-}
-.CaeFlying {
-  max-width: 250px;
-  margin-bottom: 15px;
-  margin-top: 2vh;
-  border-radius: 10px;
-}
+  .logo {
+    max-width: 250px;
+    margin-bottom: 15px;
+    margin-top: 7vh;
+  }
+  .CaeFlying {
+    max-width: 250px;
+    margin-bottom: 15px;
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
 
-.wrapper {
-  color: azure;
+  .wrapper {
+    color: azure;
+  }
 }
-
 .Content__Area {
   margin-top: -150px;
   .About__Section {
@@ -286,13 +285,13 @@ body {
       }
       @media only screen and (max-width: 600px) {
         img {
-          max-width: 400px;
+          max-width: 350px;
         }
       }
     }
     #info-Area {
       line-height: 28px;
-      max-width: 700px;
+      // max-width: 700px;
 
       h4,
       #whatIKnow {
@@ -335,7 +334,7 @@ body {
       }
       @media only screen and (max-width: 600px) {
         img {
-          max-width: 400px;
+          max-width: 350px;
         }
       }
       content {
@@ -354,7 +353,7 @@ body {
 
         #info-Area {
           line-height: 28px;
-          max-width: 700px;
+          // max-width: 700px;
 
           h4,
           #whatIKnow {
