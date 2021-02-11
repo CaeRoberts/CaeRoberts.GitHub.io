@@ -237,6 +237,9 @@ body {
 }
 .Content__Area {
   margin-top: -150px;
+  max-width: 800px;
+  display: inline-block;
+
   .About__Section {
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -275,21 +278,23 @@ body {
         color: #007cba;
       }
       img {
-        max-width: 500px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         border: 5px solid #ffffff;
-        border-radius: 16px;
+        // border-radius: 16px;
         box-shadow: 0 6px 20px 0 #929292;
       }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 480px) {
         img {
           max-width: 350px;
           margin-left: 2px;
           margin-right: 2px;
           border-radius: 2px;
           box-shadow: none;
+        }
+        content {
+          padding: 0px;
         }
       }
     }
@@ -329,6 +334,7 @@ body {
       }
       img {
         max-width: 500px;
+        height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -336,13 +342,16 @@ body {
         border-radius: 16px;
         box-shadow: 0 6px 20px 0 #929292;
       }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 480px) {
         img {
           max-width: 350px;
-          margin-left: 2px;
-          margin-right: 2px;
-          border-radius: 2px;
-          box-shadow: none;
+
+          margin-left: auto;
+          margin-right: auto;
+          // box-shadow: none;
+        }
+        content {
+          padding: 00px;
         }
       }
       content {
@@ -354,6 +363,7 @@ body {
         padding: 26px;
         display: flex;
         box-shadow: 0 6px 20px 0 #929292;
+
         h3 {
           padding-bottom: 10px;
           color: #007cba;
@@ -372,7 +382,7 @@ body {
         aside {
           border: 5px solid rgba(122, 122, 122, 0.212);
           border-radius: 16px;
-          padding: 26px;
+          padding: 16px;
           h4 {
             color: #007cba;
             font-style: none;
@@ -388,19 +398,6 @@ body {
         li {
           list-style: none;
           margin-left: 10px;
-        }
-
-        button {
-          background: #007cba;
-          padding: 16px 28px;
-          border: none;
-          border-radius: 6px;
-          color: #fefefe;
-          font-family: Rubik, sans-serif;
-          font-weight: 700;
-          font-size: 14px;
-          transition: all 0.14s ease-in-out;
-          cursor: pointer;
         }
 
         a {
@@ -508,7 +505,7 @@ body {
   text-size-adjust: auto;
   height: fit-content;
   background-color: #007cba;
-  width: 100vw;
+  // width: 100vw;
   padding-top: 10px;
   align-items: center;
   justify-content: center;

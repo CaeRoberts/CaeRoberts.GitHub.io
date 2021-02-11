@@ -224,14 +224,14 @@ body {
       align-content: center;
 }
 
-.backBtn {
+.linksSection .backBtn {
   width: 30%;
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.border4 {
+.linksSection .border4 {
   /* max-width: 50%; */
   width: 20%;
   display: inline-block;
@@ -241,25 +241,27 @@ body {
   border-color: #007cba;
 }
 
-.logo {
+.linksSection .logo {
   max-width: 250px;
   margin-bottom: 15px;
   margin-top: 7vh;
 }
 
-.CaeFlying {
+.linksSection .CaeFlying {
   max-width: 250px;
   margin-bottom: 15px;
   margin-top: 2vh;
   border-radius: 10px;
 }
 
-.wrapper {
+.linksSection .wrapper {
   color: azure;
 }
 
 .Content__Area {
   margin-top: -150px;
+  max-width: 800px;
+  display: inline-block;
 }
 
 .Content__Area .About__Section {
@@ -311,25 +313,30 @@ body {
 }
 
 .Content__Area .About__Section content img {
-  max-width: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid #ffffff;
-  border-radius: 16px;
   -webkit-box-shadow: 0 6px 20px 0 #929292;
           box-shadow: 0 6px 20px 0 #929292;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .Content__Area .About__Section content img {
-    max-width: 400px;
+    max-width: 350px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .Content__Area .About__Section content content {
+    padding: 0px;
   }
 }
 
 .Content__Area .About__Section #info-Area {
   line-height: 28px;
-  max-width: 700px;
 }
 
 .Content__Area .About__Section #info-Area h4,
@@ -368,6 +375,7 @@ body {
 
 .Content__Area #portfolio .Portfolio__El img {
   max-width: 500px;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -377,9 +385,14 @@ body {
           box-shadow: 0 6px 20px 0 #929292;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .Content__Area #portfolio .Portfolio__El img {
-    max-width: 400px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Content__Area #portfolio .Portfolio__El content {
+    padding: 00px;
   }
 }
 
@@ -406,7 +419,6 @@ body {
 
 .Content__Area #portfolio .Portfolio__El content #info-Area {
   line-height: 28px;
-  max-width: 700px;
 }
 
 .Content__Area #portfolio .Portfolio__El content #info-Area h4,
@@ -418,7 +430,7 @@ body {
 .Content__Area #portfolio .Portfolio__El content aside {
   border: 5px solid rgba(122, 122, 122, 0.212);
   border-radius: 16px;
-  padding: 26px;
+  padding: 16px;
 }
 
 .Content__Area #portfolio .Portfolio__El content aside h4 {
@@ -439,20 +451,6 @@ body {
 .Content__Area #portfolio .Portfolio__El .hire__nav li {
   list-style: none;
   margin-left: 10px;
-}
-
-.Content__Area #portfolio .Portfolio__El .hire__nav button {
-  background: #007cba;
-  padding: 16px 28px;
-  border: none;
-  border-radius: 6px;
-  color: #fefefe;
-  font-family: Rubik, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  -webkit-transition: all 0.14s ease-in-out;
-  transition: all 0.14s ease-in-out;
-  cursor: pointer;
 }
 
 .Content__Area #portfolio .Portfolio__El .hire__nav a {
@@ -579,7 +577,6 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background-color: #007cba;
-  width: 100vw;
   padding-top: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
