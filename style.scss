@@ -24,12 +24,13 @@ body {
   }
 }
 .linksSection {
-  min-height: 100vh;
+  height: max-content;
   width: 100vw;
   background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
   background-size: 300% 300%;
   animation: Gradient 10s ease infinite;
   background-color: #007cba;
+  padding-bottom: 200px;
   li {
     list-style: none;
     margin: 10px 30px;
@@ -317,141 +318,12 @@ body {
     color: azure;
   }
 }
-.portfolioArea {
-  height: fit-content;
-  max-width: 100vh;
-  background-color: #ffffff;
-  text-align: center;
-  display: inline-block;
-
-  h2 {
-    font-family: "Roboto";
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-  button {
-    border: none;
-    height: 500px;
-    width: fit-content;
-    justify-content: space-evenly;
-  }
-  #portfolioModal,
-  #pomodoroModal {
-    display: none;
-  }
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  }
-
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50vw; /* Could be more or less, depending on screen size */
-    height: fit-content;
-  }
-
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  li {
-    border: 2px, thick, rgb(0, 0, 0);
-    height: 20vh;
-    width: 20vh;
-    display: table-column;
-  }
-
-  body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 50px;
-    word-break: break-all;
-  }
-
-  .row {
-    margin: 8px 16px;
-  }
-
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 20px;
-  }
-
-  .column {
-    float: left;
-    width: 25%;
-
-    grid-column-gap: 20px;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .content {
-    background-color: white;
-    padding: 20px;
-    border: 2px #000000;
-  }
-
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-    .content {
-      padding: 0px;
-    }
-    #sectionInfo {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100vw;
-    }
-    .content {
-      padding: auto;
-    }
-  }
-}
 .Content__Area {
+  margin-top: -150px;
   .About__Section {
     padding-top: 5vh;
     padding-bottom: 5vh;
-    display: inline-block;
+    display: none;
     margin-top: -300px;
     text-align: left;
 
@@ -509,110 +381,112 @@ body {
       }
     }
   }
-
-  .Portfolio__Section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+  #portfolio {
     display: inline-block;
-    margin-top: -300px;
-    text-align: left;
-    // margin-bottom: 250px;
+    .Portfolio__El {
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      display: inline-block;
+      margin-top: -300px;
+      text-align: left;
+      // margin-bottom: 250px;
 
-    h1,
-    h3 {
-      color: #007cba;
-    }
-    img {
-      max-width: 500px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border: 5px solid #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px 0 #929292;
-    }
-    @media only screen and (max-width: 600px) {
-      img {
-        max-width: 400px;
-      }
-    }
-    content {
-      height: fit-content;
-      display: block;
-      background: #ffffff;
-      border: 5px solid #ffffff;
-      border-radius: 16px;
-      padding: 26px;
-      display: flex;
-      box-shadow: 0 6px 20px 0 #929292;
+      h1,
       h3 {
-        padding-bottom: 10px;
         color: #007cba;
       }
-
-      #info-Area {
-        line-height: 28px;
-        max-width: 700px;
-
-        h4,
-        #whatIKnow {
-          padding-bottom: 5px;
-          font-style: italic;
+      img {
+        max-width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px 0 #929292;
+      }
+      @media only screen and (max-width: 600px) {
+        img {
+          max-width: 400px;
         }
       }
-      aside {
-        border: 5px solid rgba(122, 122, 122, 0.212);
+      content {
+        height: fit-content;
+        display: block;
+        background: #ffffff;
+        border: 5px solid #ffffff;
         border-radius: 16px;
         padding: 26px;
-        h4 {
+        display: flex;
+        box-shadow: 0 6px 20px 0 #929292;
+        h3 {
+          padding-bottom: 10px;
           color: #007cba;
-          font-style: none;
+        }
+
+        #info-Area {
+          line-height: 28px;
+          max-width: 700px;
+
+          h4,
+          #whatIKnow {
+            padding-bottom: 5px;
+            font-style: italic;
+          }
+        }
+        aside {
+          border: 5px solid rgba(122, 122, 122, 0.212);
+          border-radius: 16px;
+          padding: 26px;
+          h4 {
+            color: #007cba;
+            font-style: none;
+          }
         }
       }
-    }
 
-    .hire__nav {
-      display: flex;
-      margin-top: 28px;
-      align-items: center;
+      .hire__nav {
+        display: flex;
+        margin-top: 28px;
+        align-items: center;
 
-      li {
-        list-style: none;
-        margin-left: 10px;
-      }
+        li {
+          list-style: none;
+          margin-left: 10px;
+        }
 
-      button {
-        background: #007cba;
-        padding: 16px 28px;
-        border: none;
-        border-radius: 6px;
-        color: #fefefe;
-        font-family: Rubik, sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        transition: all 0.14s ease-in-out;
-        cursor: pointer;
-      }
+        button {
+          background: #007cba;
+          padding: 16px 28px;
+          border: none;
+          border-radius: 6px;
+          color: #fefefe;
+          font-family: Rubik, sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          transition: all 0.14s ease-in-out;
+          cursor: pointer;
+        }
 
-      a {
-        background: #007cba;
-        padding: 16px 28px;
-        border: none;
-        border-radius: 6px;
-        color: #fefefe;
-        font-family: Rubik, sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        transition: all 0.14s ease-in-out;
-        cursor: pointer;
+        a {
+          background: #007cba;
+          padding: 16px 28px;
+          border: none;
+          border-radius: 6px;
+          color: #fefefe;
+          font-family: Rubik, sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          transition: all 0.14s ease-in-out;
+          cursor: pointer;
+        }
       }
     }
   }
   .Hire__Section {
     padding-top: 5vh;
     padding-bottom: 5vh;
-    display: inline-block;
-    margin-top: -300px;
+    display: none;
+    margin-top: -500px;
     text-align: left;
 
     h1,

@@ -3,53 +3,43 @@
 /////////////////Definitions/////////////
 /* ====================================*/
 /* ====================================*/
-
+const hireBtn = document.getElementById("banner");
 const aboutBtn = document.getElementById("About-Btn");
-const resumeBtn = document.getElementById("Resume-Btn");
-const languagesBtn = document.getElementById("Languages-Btn");
-
-/* ====================================*/
-/////////////////Projects////////////////
-/* ====================================*/
-
-const flashcardsBtn = document.getElementById("Flashcards-Btn");
-const linksBtn = document.getElementById("Website-Btn");
-const teslaBtn = document.getElementById("Tesla-Btn");
-const chatBtn = document.getElementById("Chat-Btn");
+const portfolioBtn = document.getElementById("Portfolio-Btn");
+const numberGameBtn = document.getElementById("NumberGame-Btn");
+const linksBtn = document.getElementById("LinksPage-Btn");
 const pomodoroBtn = document.getElementById("Pomodoro-Btn");
 
-/* ====================================*/
-/////////////////Back Btns////////////////
-/* ====================================*/
-const backButton = document.getElementById("backButton1");
-const backButton1 = document.getElementById("backButton2");
-
 const backLogo = document.getElementById("Logo");
+
+const aboutSection = document.getElementById("about");
+
+const portfolioEl = document.getElementById("portfolio");
+const hireEl = document.getElementById("hire");
+const portfolio1 = document.getElementById("portfolio1");
+const portfolio2 = document.getElementById("portfolio2");
+const portfolio3 = document.getElementById("portfolio3");
 
 /* ====================================*/
 /* ====================================*/
 /////////////////Functions///////////////
 /* ====================================*/
 /* ====================================*/
-
-const openAbout = () => {
-  document.getElementById("frontpage").style.display = "none";
-  document.getElementById("About-Section").style.display = "block";
-  document.getElementById("About-Box").style.display = "block";
+activateAbout = () => {
+  aboutSection.style.display = "inline-block";
+  portfolioEl.style.display = "none";
+  hireEl.style.display = "none";
 };
 
-const openLang = () => {
-  document.getElementById("Lang-Box").style.display = "block";
-  document.getElementById("Lang-Section").style.display = "block";
-  document.getElementById("frontpage").style.display = "none";
+activatePortfolio = () => {
+  aboutSection.style.display = "none";
+  portfolioEl.style.display = "inline-block";
+  hireEl.style.display = "none";
 };
-
-const backBtn = () => {
-  document.getElementById("About-Section").style.display = "none";
-  document.getElementById("About-Box").style.display = "none";
-  document.getElementById("Lang-Box").style.display = "none";
-  document.getElementById("Lang-Section").style.display = "none";
-  document.getElementById("frontpage").style.display = "block";
+activateHire = () => {
+  hireEl.style.display = "inline-block";
+  aboutSection.style.display = "none";
+  portfolioEl.style.display = "none";
 };
 
 /* ====================================*/
@@ -57,84 +47,63 @@ const backBtn = () => {
 /////////////////Buttons/////////////////
 /* ====================================*/
 /* ====================================*/
+hireBtn.addEventListener("click", function () {
+  console.log(`Hire Button Working`);
+  activateHire();
+  hireEl.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
+});
 
 aboutBtn.addEventListener("click", function () {
   console.log(`About Button Working`);
-  openAbout();
-});
-resumeBtn.addEventListener("click", function () {
-  console.log(`Resume Button Working`);
-});
-languagesBtn.addEventListener("click", function () {
-  console.log(`Languages Button Working`);
-  openLang();
+  activateAbout();
+  aboutSection.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
 });
 
-backButton.addEventListener("click", function () {
-  console.log(`Back Button Working`);
-  backBtn();
-});
-backButton1.addEventListener("click", function () {
-  console.log(`Back Button Working`);
-  backBtn();
+portfolioBtn.addEventListener("click", function () {
+  console.log(`Portfolio Button Working`);
+  activatePortfolio();
+  portfolio1.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
 });
 
 backLogo.addEventListener("click", function () {
   console.log(`Back Button Working`);
-  backBtn();
 });
 
-flashcardsBtn.addEventListener("click", function () {
-  console.log(`Flashcards Button Working`);
-});
 linksBtn.addEventListener("click", function () {
-  console.log(`links Button Working`);
+  console.log(`Flashcards Button Working`);
+  portfolio1.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
 });
-teslaBtn.addEventListener("click", function () {
-  console.log(`Tesla Button Working`);
-});
-chatBtn.addEventListener("click", function () {
-  console.log(`Chat Button Working`);
-});
+
 pomodoroBtn.addEventListener("click", function () {
   console.log(`Pomodoro Button Working`);
+  portfolio2.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
 });
 
-// Get the modal
-var pomoModal = document.getElementById("pomodoroModal");
-var portModal = document.getElementById("portfolioModal");
-
-// Get the button that opens the modal
-var pomobtn = document.getElementById("PomodoroModalBtn");
-var portbtn = document.getElementById("PortfolioModalBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-pomobtn.onclick = function () {
-  pomoModal.style.display = "block";
-  console.log(`pomoBtn Working`);
-};
-portbtn.onclick = function () {
-  portModal.style.display = "block";
-  console.log(`portBtn Working`);
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  pomoModal.style.display = "none";
-  portModal.style.display = "none";
-  console.log(`Span Working`);
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == pomoModal) {
-    pomoModal.style.display = "none";
-    console.log(`Pomowindow Working`);
-  } else if (event.target == portModal) {
-    portModal.style.display = "none";
-    console.log(`Portwindow Working`);
-  }
-};
+numberGameBtn.addEventListener("click", function () {
+  console.log(`Flashcards Button Working`);
+  portfolio3.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+});

@@ -16,7 +16,7 @@
     <title>👨‍💻 - Cae Roberts</title>
   </head>
   <body>
-    <section class="banner__Section">
+    <section id="banner" class="banner__Section">
       <a><p>👋 Are you hiring? I'm looking for remote opportunities! ➡</p></a>
     </section>
     <div class="linksSection">
@@ -68,6 +68,7 @@
         <!------------------------------------------------------------------>
         <h2>Frontend Development</h2>
         <button class="border" id="About-Btn">About Me</button>
+        <button class="border" id="Portfolio-Btn">Portfolio</button>
         <button
           type="submit"
           onclick="window.open('Caeron Roberts - CV.pdf')"
@@ -77,49 +78,18 @@
           CV (Download)
         </button>
 
-        <button class="border" id="Languages-Btn">
-          Languages & Frameworks
-        </button>
-
         <h2>Projects</h2>
 
-        <a
-          class="border"
-          id="LinksPage-Btn"
-          href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io"
-          >Links Page</a
-        >
+        <a class="border" id="LinksPage-Btn">Links Page</a>
 
-        <a
-          class="border"
-          id="Pomodoro-Btn"
-          href="https://github.com/CaeRoberts/Pomodoro"
-          >Pomodoro Timer & To-do list</a
-        >
+        <a class="border" id="Pomodoro-Btn">Pomodoro Timer & To-do list</a>
 
         <a
           class="border3"
-          id="Flashcards-Btn"
-          onmouseover="this.innerHTML='Coming Soon'"
-          onmouseout="this.innerHTML='Flashcards.JS'"
+          id="NumberGame-Btn"
+          onmouseout="this.innerHTML='Number Game'"
         >
-          Flashcards.Js
-        </a>
-        <a
-          class="border3"
-          id="Tesla-Btn"
-          onmouseover="this.innerHTML='Coming Soon'"
-          onmouseout="this.innerHTML='Tesla Model 3 Mock Website'"
-        >
-          Tesla Model 3 Mock Website
-        </a>
-        <a
-          class="border3"
-          id="Chat-Btn"
-          onmouseover="this.innerHTML='Coming Soon'"
-          onmouseout="this.innerHTML='Chat App'"
-        >
-          Chat App
+          Number Game
         </a>
 
         <!------------------------------------------------------------------>
@@ -132,257 +102,10 @@
         >
         <a class="border2" href="mailto:roberts.caeron@me.com">Email</a>
       </div>
-
-      <!----------------------------------------------------------------------->
-      <!-- About -->
-      <!----------------------------------------------------------------------->
-      <div id="About-Section" class="About">
-        <div id="About-Box" class="aboutBox">
-          <img class="CaeFlying" src="CaeFlying.jpg" />
-          <h2>Hello World!</h2>
-          <p>
-            Hello, my name's Cae Roberts & I'm a Junior Frontend Developer. I've
-            recently left the Royal Navy and decided to pursue my newfound love
-            of web-development.
-          </p>
-          <p>
-            I love designing and developing websites & web applications. So far,
-            I feel confident with HTML / CSS and for the most part JavaScript,
-            it's something I'm continuing to learn (and I love doing it!).
-          </p>
-          <p>
-            If I'm not sat in front of the computer creating you can normally
-            find my flying somewhere above Berkshire - big brownie points if you
-            can reach me on 125.25 Farnborough Radar!
-          </p>
-          <h2>Let's talk!</h2>
-          <a class="border4" href="https://www.linkedin.com/in/caeronroberts/"
-            >LinkedIn</a
-          >
-          <a class="border4" href="mailto:roberts.caeron@me.com">Email</a>
-          <button id="backButton1" class="backBtn1">Go Back</button>
-        </div>
-        <br />
-      </div>
-      <div id="Lang-Section" class="LangSec">
-        <div id="Lang-Box" class="Langbox">
-          <br />
-          <h2>What I work with</h2>
-          <div class="js">
-            <i class="fab fa-js-square"></i>
-            <h3>JavaScript</h3>
-          </div>
-          <div class="html">
-            <i class="fab fa-html5"></i>
-            <h3>HTML</h3>
-          </div>
-          <div class="sass">
-            <i class="fab fa-sass"></i>
-            <h3>SASS/CSS</h3>
-          </div>
-          <div class="react">
-            <i class="fab fa-react"></i>
-            <h3>REACT</h3>
-            <br />
-          </div>
-          <h2>Let's talk!</h2>
-          <a class="border4" href="https://www.linkedin.com/in/caeronroberts/"
-            >LinkedIn</a
-          >
-          <a class="border4" href="mailto:roberts.caeron@me.com">Email</a>
-          <button id="backButton2" class="backBtn1">Go Back</button>
-        </div>
-        <br />
-      </div>
     </div>
-    <!-- <div class="portfolioArea">
-      <h2>Portfolio 🎨</h2>
-      <div class="column" id="column-pomodoro">
-        <div class="content">
-          <button id="PomodoroModalBtn">
-            <img
-              src="PomodoroWebsite.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
-            <div id="sectionInfo">
-            <h3>Pomodoro Timer</h3>
-            <p>
-              I built the Pomodoro Timer / To - do list to help me stay
-              productive throughout my JavaScript & Aviation studies.
-              It also came in quite handy to add into my portfolio.
-            </p>
-            <a href=""> Live Website</a>
-          <a href=""> GitHub Repository</a>
-          <a href=""> Read Me</a>
-        </div>
-          </button>
-          
-          <div id="pomodoroModal" class="modal">
-            <span class="pomoclose">&times;</span>
-            <div class="modal-content">
-              <img
-                src="PomodoroWebsite.png"
-                alt="Mountains"
-                style="width: 50%"
-              />
-              <h2>Pomodoro Timer & To-do list</h2>
-              <h3>Purpose</h3>
-              <p>
-                I built the Pomodoro Timer to help me achieve deep, meaningful focus whilst working. By setting strict on / off periods for work has helped noticeably increase productivity.
-              </p>
-              <h3>Languages / Frameworks Used</h3>
-              <p>
-                This website uses standard vanilla JavaScript for the
-                functionality of the buttons / display. The website is built on
-                VSCode using HTML and CSS with a pre-compiler of SASS to write
-                cleaner, more legible styling.
-              </p>
-              <div class="portfolioLinks">
-                <a href=""> Live Website</a>
-                <a href=""> GitHub Repository</a>
-                <a href=""> Read Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="column" id="column-portfolio">
-        <div class="content">
-          <button id="PortfolioModalBtn">
-            <img
-              src="portfolioWebsite.png"
-              alt="Portfolio website"
-              style="width: 100%"
-            />
-            <div id="sectionInfo">
-            <h3>Portfolio Website</h3>
-            <p>
-              I've included this website as part of my portfolio. It serves two
-              purposes -
-              1. a handy quick-to-access links page
-              2. a portfolio website that highlights my key projects. 
-            </p>
-            <a href="https://www.caeroberts.github.io"> Live Website</a>
-            <a href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io">
-              GitHub Repository</a
-            >
-            <a
-              href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io/blob/main/README.md"
-              >Read Me</a
-            >
-            </div>
-          </button>
-        </br>
-         
-          <div id="portfolioModal" class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-              <img
-                src="portfolioWebsite.png"
-                alt="Mountains"
-                style="width: 50%"
-              />
-              <h2>Front End Development Portfolio & Links Page</h2>
-              <h3>Purpose</h3>
-              <p>
-                As previously mentioned the website serves two functions; a
-                links page that highlights my social medias, portfolio and
-                development career, and as a portfolio for my most recent
-                development works.
-              </p>
-              <h3>Languages / Frameworks Used</h3>
-              <p>
-                This website uses standard vanilla JavaScript for the
-                functionality of the buttons / display. The website is built on
-                VSCode using HTML and CSS with a pre-compiler of SASS to write
-                cleaner, more legible styling.
-              </p>
-              <div class="portfolioLinks">
-                <a href=""> Live Website</a>
-                <a href=""> GitHub Repository</a>
-                <a href=""> Read Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column" id="column-flashcards">
-        <div class="content">
-          <button id="Btn Modal">
-            <img src="ComingSoon.png" alt="Nature" style="width: 100%" />
-            <div id="sectionInfo">
-            <h3>Flashcards.JS</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              commodo elementum massa vitae tincidunt. Cras commodo orci non
-              diam tempus semper tincidunt.
-            </p>
-            <a href=""> Live Website</a>
-            <a href="">
-              GitHub Repository</a
-            >
-            <a
-              href=""
-              >Read Me</a
-            >
-            </div>
-          </button>
-         
-        </div>
-      </div>
-      <div class="column" id="column-flashcards">
-        <div class="content">
-          <button id="Btn Modal">
-            <img src="ComingSoon.png" alt="Mountains" style="width: 100%" />
-            <div id="sectionInfo">
-            <h3>Chat App</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              commodo elementum massa vitae tincidunt. Cras commodo orci non
-              diam tempus semper tincidunt.  
-            </p>
-            <a href=""> Live Website</a>
-            <a href="">
-              GitHub Repository</a
-            >
-            <a
-              href=""
-              >Read Me</a
-            >
-            </div>
-          </button>
-        
-        </div>
-      </div>
-      <!-- <div class="column" id="column-ThankYouNHS">
-        <div class="content">
-          <button id="Btn Modal">
-            <img src="ComingSoon.png" alt="Mountains" style="width: 100%" />
-            <h3>Chat App</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              commodo elementum massa vitae tincidunt. Cras commodo orci non
-              diam tempus semper. Sed et neque vitae nisl volutpat tristique vel
-              ut nisi. 
-            </p>
-            <a href=""> Live Website</a>
-            <a href="">
-              GitHub Repository</a
-            >
-            <a
-              href=""
-              >Read Me</a
-            >
-          </button>
-        
-        </div>
-      </div> -->
-    <!-- <br />
-    </div> -->
+
     <section class="Content__Area">
-      <section class="About__Section">
+      <section id="about" class="About__Section">
         <content>
           <div class="column" id="info-Area">
             <h1>About Me:</h1>
@@ -434,124 +157,139 @@
         </content>
       </section>
       <br />
-      <section class="Portfolio__Section">
-        <content>
-          <div class="column" id="info-Area">
-            <h1>Links-Based Landing Page & Portfolio</h1>
-            <br />
-            <img src="portfolioWebsite.png" alt="Cae Roberts first Solo" />
-            <br />
+      <div id="portfolio">
+        <section id="portfolio1" class="Portfolio__El">
+          <content>
+            <div class="column" id="info-Area">
+              <h1>Links-Based Landing Page & Portfolio</h1>
+              <br />
+              <img src="portfolioWebsite.png" alt="Cae Roberts first Solo" />
+              <br />
 
-            <div id="whatIKnow">
-              <h3>Overview:</h3>
-              <p>
-                The links-based landing page and portfolio is a user-friendly,
-                quick way to get around everything a potential company would
-                want to know about me. I designed it as a links based landing
-                page so I could add it so my CV, LinkedIn, Email footer & even
-                my Instagram page. The mobile optimised design means it's super
-                friendly for mobile users and the DOM manipulation helps the
-                website load super quick!
-              </p>
+              <div id="whatIKnow">
+                <h3>Overview:</h3>
+                <p>
+                  The links-based landing page and portfolio is a user-friendly,
+                  quick way to get around everything a potential company would
+                  want to know about me. I designed it as a links based landing
+                  page so I could add it so my CV, LinkedIn, Email footer & even
+                  my Instagram page. The mobile optimised design means it's
+                  super friendly for mobile users and the DOM manipulation helps
+                  the website load super quick!
+                </p>
+              </div>
+              <br />
+              <aside>
+                <h4>Role:</h4>
+                <p>
+                  Personal Project. I was the sole designer and developer. I
+                  used vanilla JavaScript to make this website and tested the
+                  website across Google Chrome, Safari, Mozilla Firefox and even
+                  Internet Explorer! I used SASS/SCSS to keep the styling
+                  organised and fluent throughout the project.
+                </p>
+              </aside>
+              <br />
+              <ul class="hire__nav">
+                <li>
+                  <a href="https://caeroberts.github.io/">View Project</a>
+                </li>
+                <li>
+                  <a href="https://github.com/CaeRoberts/CaeRoberts.GitHub.io"
+                    >View GitHub 🐱</a
+                  >
+                </li>
+              </ul>
             </div>
-            <br />
-            <aside>
-              <h4>Role:</h4>
-              <p>
-                Personal Project. I was the sole designer and developer. I used
-                vanilla JavaScript to make this website and tested the website
-                across Google Chrome, Safari, Mozilla Firefox and even Internet
-                Explorer! I used SASS/SCSS to keep the styling organised and
-                fluent throughout the project.
-              </p>
-            </aside>
-            <br />
-            <ul class="hire__nav">
-              <li><a>View Project</a></li>
-              <li><a>View GitHub 🐱</a></li>
-            </ul>
-          </div>
-        </content>
-      </section>
-      <br />
-      <section class="Portfolio__Section">
-        <content>
-          <div class="column" id="info-Area">
-            <h1>Pomodoro Timer & To-do List Website</h1>
-            <br />
-            <img src="PomodoroWebsite.png" alt="Pomodoro Website Preview" />
-            <br />
+          </content>
+        </section>
+        <br />
+        <section id="portfolio2" class="Portfolio__El">
+          <content>
+            <div class="column" id="info-Area">
+              <h1>Pomodoro Timer & To-do List Website</h1>
+              <br />
+              <img src="PomodoroWebsite.png" alt="Pomodoro Website Preview" />
+              <br />
 
-            <div id="whatIKnow">
-              <h3>Overview:</h3>
-              <p>
-                The Pomodoro timer was initially developed as a test project to
-                play around with setTimeout and SetInterval. After seeing the
-                potential to add it to my portfolio I decided to continue to
-                develop to make it MVP. The website is made mobile first and has
-                been tested on mobile and desktop web browsers.
-              </p>
+              <div id="whatIKnow">
+                <h3>Overview:</h3>
+                <p>
+                  The Pomodoro timer was initially developed as a test project
+                  to play around with setTimeout and SetInterval. After seeing
+                  the potential to add it to my portfolio I decided to continue
+                  to develop to make it MVP. The website is made mobile first
+                  and has been tested on mobile and desktop web browsers.
+                </p>
+              </div>
+              <br />
+              <aside>
+                <h4>Role:</h4>
+                <p>
+                  Personal Project. I was the sole designer and developer. I
+                  used vanilla JavaScript to make this website and tested the
+                  website across Google Chrome, Safari, Mozilla Firefox and even
+                  Internet Explorer! I used SASS/SCSS to keep the styling
+                  organised and fluent throughout the project.
+                </p>
+              </aside>
+              <br />
+              <ul class="hire__nav">
+                <li><a>View Project</a></li>
+                <li>
+                  <a href="https://github.com/CaeRoberts/Pomodoro"
+                    >View GitHub 🐱</a
+                  >
+                </li>
+              </ul>
             </div>
-            <br />
-            <aside>
-              <h4>Role:</h4>
-              <p>
-                Personal Project. I was the sole designer and developer. I used
-                vanilla JavaScript to make this website and tested the website
-                across Google Chrome, Safari, Mozilla Firefox and even Internet
-                Explorer! I used SASS/SCSS to keep the styling organised and
-                fluent throughout the project.
-              </p>
-            </aside>
-            <br />
-            <ul class="hire__nav">
-              <li><a>View Project</a></li>
-              <li><a>View GitHub 🐱</a></li>
-            </ul>
-          </div>
-        </content>
-      </section>
-      <br />
-      <section class="Portfolio__Section">
-        <content>
-          <div class="column" id="info-Area">
-            <h1>Number Game ("Pig Game")</h1>
-            <br />
-            <img src="NumberGame.png" alt="Cae Roberts first Solo" />
-            <br />
+          </content>
+        </section>
+        <br />
+        <section id="portfolio3" class="Portfolio__El">
+          <content>
+            <div class="column" id="info-Area">
+              <h1>Number Game ("Pig Game")</h1>
+              <br />
+              <img src="NumberGame.png" alt="Cae Roberts first Solo" />
+              <br />
 
-            <div id="whatIKnow">
-              <h3>Overview:</h3>
-              <p>
-                The pig game is a simple DOM manipulation project that utilises
-                game mechanics and user state to change the styling and HTML of
-                the project. It was initially built as a project within a
-                JavaScript course but I enjoyed developing it so much that I
-                decided to carry on with it.
-              </p>
+              <div id="whatIKnow">
+                <h3>Overview:</h3>
+                <p>
+                  The pig game is a simple DOM manipulation project that
+                  utilises game mechanics and user state to change the styling
+                  and HTML of the project. It was initially built as a project
+                  within a JavaScript course but I enjoyed developing it so much
+                  that I decided to carry on with it.
+                </p>
+              </div>
+              <br />
+              <aside>
+                <h4>Role:</h4>
+                <p>
+                  Personal Project / Instructor - led. I was the sole developer
+                  of this project following a JavaScript course. I used vanilla
+                  JavaScript to make this website and tested the website across
+                  Google Chrome, Safari, Mozilla Firefox and even Internet
+                  Explorer!
+                </p>
+              </aside>
+              <br />
+              <ul class="hire__nav">
+                <li><a>View Project</a></li>
+                <li>
+                  <a href="https://github.com/CaeRoberts/Pig-Game"
+                    >View GitHub 🐱</a
+                  >
+                </li>
+              </ul>
             </div>
-            <br />
-            <aside>
-              <h4>Role:</h4>
-              <p>
-                Personal Project / Instructor - led. I was the sole developer of
-                this project following a JavaScript course. I used vanilla
-                JavaScript to make this website and tested the website across
-                Google Chrome, Safari, Mozilla Firefox and even Internet
-                Explorer!
-              </p>
-            </aside>
-            <br />
-            <ul class="hire__nav">
-              <li><a>View Project</a></li>
-              <li><a>View GitHub 🐱</a></li>
-            </ul>
-          </div>
-        </content>
-      </section>
-
+          </content>
+        </section>
+      </div>
       <br />
-      <section class="Hire__Section">
+      <section class="Hire__Section" id="hire">
         <content>
           <div class="column" id="info-Area">
             <h1>Recruiting? I want to join your team!</h1>
