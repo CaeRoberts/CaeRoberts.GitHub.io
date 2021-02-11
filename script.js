@@ -23,6 +23,7 @@ const portfolio3 = document.getElementById("portfolio3");
 const portfolioLink = document.getElementById("portfolioHomeLink");
 const scrollUp = document.getElementById("scrollUp");
 const scrollUp2 = document.getElementById("scrollUp2");
+const scrollUp3 = document.getElementById("scrollUp3");
 const footerAbt = document.getElementById("footerAbt");
 const footerPort = document.getElementById("footerPort");
 /* ====================================*/
@@ -113,6 +114,13 @@ scrollUp.addEventListener("click", function () {
   });
 });
 scrollUp2.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+});
+scrollUp3.addEventListener("click", function () {
   hireBtn.scrollIntoView({
     behavior: "smooth",
     inline: "nearest",
