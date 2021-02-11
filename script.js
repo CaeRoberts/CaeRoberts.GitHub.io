@@ -13,13 +13,18 @@ const pomodoroBtn = document.getElementById("Pomodoro-Btn");
 const backLogo = document.getElementById("Logo");
 
 const aboutSection = document.getElementById("about");
+const hirePortfolioBtn = document.getElementById("hire-portfolio");
 
 const portfolioEl = document.getElementById("portfolio");
 const hireEl = document.getElementById("hire");
 const portfolio1 = document.getElementById("portfolio1");
 const portfolio2 = document.getElementById("portfolio2");
 const portfolio3 = document.getElementById("portfolio3");
-
+const portfolioLink = document.getElementById("portfolioHomeLink");
+const scrollUp = document.getElementById("scrollUp");
+const scrollUp2 = document.getElementById("scrollUp2");
+const footerAbt = document.getElementById("footerAbt");
+const footerPort = document.getElementById("footerPort");
 /* ====================================*/
 /* ====================================*/
 /////////////////Functions///////////////
@@ -77,8 +82,73 @@ portfolioBtn.addEventListener("click", function () {
   });
 });
 
-backLogo.addEventListener("click", function () {
-  console.log(`Back Button Working`);
+hirePortfolioBtn.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+  setTimeout(function () {
+    activatePortfolio();
+    portfolio1.scrollIntoView({
+      behavior: "smooth",
+      inline: "nearest",
+      block: "start",
+    });
+  }, 1000);
+});
+
+portfolioLink.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+});
+scrollUp.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+});
+scrollUp2.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+});
+
+footerAbt.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+  setTimeout(function () {
+    activateAbout();
+    aboutSection.scrollIntoView({
+      behavior: "smooth",
+      inline: "nearest",
+      block: "start",
+    });
+  }, 1000);
+});
+footerPort.addEventListener("click", function () {
+  hireBtn.scrollIntoView({
+    behavior: "smooth",
+    inline: "nearest",
+    block: "start",
+  });
+  setTimeout(function () {
+    activatePortfolio();
+    portfolio1.scrollIntoView({
+      behavior: "smooth",
+      inline: "nearest",
+      block: "start",
+    });
+  }, 1000);
 });
 
 linksBtn.addEventListener("click", function () {

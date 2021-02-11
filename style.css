@@ -357,6 +357,20 @@ body {
   text-align: left;
 }
 
+.Content__Area .About__Section a {
+  background: #007cba;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 6px;
+  color: #fefefe;
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-transition: all 0.14s ease-in-out;
+  transition: all 0.14s ease-in-out;
+  cursor: pointer;
+}
+
 .Content__Area .About__Section h1,
 .Content__Area .About__Section h3 {
   color: #007cba;
@@ -569,6 +583,8 @@ body {
   display: flex;
   -webkit-box-shadow: 0 6px 20px 0 #929292;
           box-shadow: 0 6px 20px 0 #929292;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .Content__Area .Hire__Section content h3 {
@@ -646,10 +662,12 @@ body {
      -moz-text-size-adjust: auto;
       -ms-text-size-adjust: auto;
           text-size-adjust: auto;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #007cba;
   width: 100vw;
-  padding-top: 20px;
+  padding-top: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -662,8 +680,8 @@ body {
 }
 
 .footer .column {
-  padding: 1rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .footer li {
@@ -680,51 +698,16 @@ body {
 }
 
 .footer .footer-container {
-  background-color: #0373ac;
   -ms-flex-line-pack: center;
       align-content: center;
   display: -ms-inline-grid;
   display: inline-grid;
   grid-gap: 0.5rem;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   padding: 0.5rem;
-}
-
-.footer .column-2,
-.footer .column-3,
-.footer .column-4 {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-  margin-top: 10px;
-  padding-top: 10px;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer .footer-container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer .footer-container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer .footer-container {
-    width: 1170px;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer #footerlanguages {
-    display: none;
-  }
+  width: 80vw;
+  max-width: 800px;
 }
 
 .footer .footer-header {
