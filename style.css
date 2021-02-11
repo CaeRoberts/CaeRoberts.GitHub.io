@@ -30,7 +30,8 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
+  width: 100vw;
+  background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a), #0084ff;
   background-size: 300% 300%;
   -webkit-animation: Gradient 10s ease infinite;
           animation: Gradient 10s ease infinite;
@@ -38,16 +39,40 @@ body {
   padding-bottom: 200px;
 }
 
-.linksSection .logo {
-  max-width: 250px;
-  margin-bottom: 15px;
-  margin-top: 7vh;
+.linksSection img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.linksSection li {
+@media only screen and (max-width: 480px) {
+  .linksSection img {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .linksSection content {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .linksSection img {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.linksSection ul {
   list-style: none;
   margin: 10px 30px;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -115,11 +140,6 @@ body {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.linksSection .frontpage #contactEl {
-  max-width: 480px;
-  display: inline-block;
 }
 
 .linksSection .frontpage button {
