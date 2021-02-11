@@ -286,6 +286,10 @@ body {
       @media only screen and (max-width: 600px) {
         img {
           max-width: 350px;
+          margin-left: 2px;
+          margin-right: 2px;
+          border-radius: 2px;
+          box-shadow: none;
         }
       }
     }
@@ -335,6 +339,10 @@ body {
       @media only screen and (max-width: 600px) {
         img {
           max-width: 350px;
+          margin-left: 2px;
+          margin-right: 2px;
+          border-radius: 2px;
+          box-shadow: none;
         }
       }
       content {
