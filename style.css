@@ -30,14 +30,12 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: 100vw;
   background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
   background-size: 300% 300%;
   -webkit-animation: Gradient 10s ease infinite;
           animation: Gradient 10s ease infinite;
   background-color: #007cba;
   padding-bottom: 200px;
-  /* Buttons */
   /* Buttons */
 }
 
@@ -81,7 +79,6 @@ body {
 .linksSection .frontpage {
   display: block;
   min-height: 80vh;
-  max-width: 500px;
   text-align: center;
   color: azure;
   margin-left: auto;
@@ -121,6 +118,19 @@ body {
   min-width: 350px;
 }
 
+.linksSection .border2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.linksSection #contactEl {
+  max-width: 480px;
+  display: inline-block;
+}
+
 .linksSection button {
   color: azure;
   font-family: "Roboto", sans-serif;
@@ -148,31 +158,11 @@ body {
   color: #007cba;
 }
 
-.linksSection #backButton1 {
-  max-width: 310px;
-  min-width: 310px;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #007cba;
-  border-color: #007cba;
-}
-
 .linksSection #backButton1:hover {
   -webkit-box-shadow: inset 0 0 0 3px #ffffff;
           box-shadow: inset 0 0 0 3px #ffffff;
   background-color: #007cba;
   color: azure;
-}
-
-.linksSection #backButton2 {
-  max-width: 310px;
-  min-width: 310px;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #007cba;
-  border-color: #007cba;
 }
 
 .linksSection #backButton2:hover {
@@ -234,91 +224,14 @@ body {
       align-content: center;
 }
 
-.linksSection .Portfolio {
-  display: none;
-  min-height: 100vh;
-  max-width: 80vh;
-  text-align: center;
-  color: azure;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.linksSection .about {
-  display: none;
-  max-height: 120vh;
-  min-height: 100vh;
-  max-width: 30vw;
-  text-align: center;
-  color: azure;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.linksSection .aboutBox {
-  display: none;
-  max-width: 400px;
-  min-width: 30vw;
-  /* width: 40vw; */
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  margin-left: auto;
-  margin-right: auto;
-  color: #007cba;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.linksSection .Langsec {
-  display: none;
-  max-height: 120vh;
-  min-height: 100vh;
-  max-width: 30vw;
-  text-align: center;
-  color: azure;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.linksSection .Langbox {
-  display: none;
-  max-width: 400px;
-  min-width: 30vw;
-  /* width: 40vw; */
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  margin-left: auto;
-  margin-right: auto;
-  color: #007cba;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.linksSection .Langbox .fab {
-  font-size: 9em;
-  display: inline-block;
-}
-
-.linksSection .Langbox .fab:hover {
-  color: #0eb96a;
-}
-
-.linksSection .border2 {
-  /* max-width: 50%; */
-  width: 20%;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.linksSection .backBtn {
+.backBtn {
   width: 30%;
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.linksSection .border4 {
+.border4 {
   /* max-width: 50%; */
   width: 20%;
   display: inline-block;
@@ -328,20 +241,20 @@ body {
   border-color: #007cba;
 }
 
-.linksSection .logo {
+.logo {
   max-width: 250px;
   margin-bottom: 15px;
   margin-top: 7vh;
 }
 
-.linksSection .CaeFlying {
+.CaeFlying {
   max-width: 250px;
   margin-bottom: 15px;
   margin-top: 2vh;
   border-radius: 10px;
 }
 
-.linksSection .wrapper {
+.wrapper {
   color: azure;
 }
 
