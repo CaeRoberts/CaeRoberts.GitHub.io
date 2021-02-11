@@ -313,10 +313,13 @@ body {
 }
 
 .Content__Area .About__Section content img {
+  max-width: 500px;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid #ffffff;
+  border-radius: 16px;
   -webkit-box-shadow: 0 6px 20px 0 #929292;
           box-shadow: 0 6px 20px 0 #929292;
 }
@@ -324,11 +327,8 @@ body {
 @media only screen and (max-width: 480px) {
   .Content__Area .About__Section content img {
     max-width: 350px;
-    margin-left: 2px;
-    margin-right: 2px;
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
   }
   .Content__Area .About__Section content content {
     padding: 0px;
