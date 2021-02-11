@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // width: 100vw;
 }
 
 $link-text-color: azure;
@@ -25,12 +26,17 @@ body {
 }
 .linksSection {
   height: max-content;
-  // width: 100vw;
+  // max-width: 100vw;
   background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
   background-size: 300% 300%;
   animation: Gradient 10s ease infinite;
   background-color: #007cba;
   padding-bottom: 200px;
+  .logo {
+    max-width: 250px;
+    margin-bottom: 15px;
+    margin-top: 7vh;
+  }
   li {
     list-style: none;
     margin: 10px 30px;
@@ -40,16 +46,13 @@ body {
     border-radius: 50%;
     transition: 0.5s;
   }
-
   h2 {
     font-family: "Roboto", sans-serif;
     padding-bottom: 20px;
   }
 
-  p {
-    font-family: "$standardFont";
-  }
   a {
+    font-family: "$standardFont";
     color: $link-text-color;
     border: 2px solid$link-text-color;
     display: flex;
@@ -57,182 +60,153 @@ body {
     margin-bottom: 15px;
     border-radius: 10px;
     text-decoration: none;
-  }
-
-  .socials {
-    padding: 10px 5px;
-
     border: none;
   }
 
   .frontpage {
     display: block;
     min-height: 80vh;
-    // max-width: 500px;
     text-align: center;
     color: azure;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  .border {
-    color: $link-text-color;
-    font-family: "Roboto", sans-serif;
-    border: 2px solid $link-text-color;
-    display: block;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    max-width: 400px;
-    min-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .border {
+      color: $link-text-color;
+      font-family: "Roboto", sans-serif;
+      border: 2px solid $link-text-color;
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      max-width: 300px;
 
-  .border3 {
-    /* max-width: 50%; */
-    color: $link-text-color;
-    font-family: "Roboto", sans-serif;
-    border: 2px solid $link-text-color;
-    display: block;
-    padding: 10px 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    max-width: 400px;
-    min-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #LinksPage-Btn {
-    max-width: 400px;
-    min-width: 350px;
-  }
-
-  .border2 {
-    display: inline-flex;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #contactEl {
-    max-width: 480px;
-    display: inline-block;
-  }
-  button {
-    color: $link-text-color;
-    font-family: "Roboto", sans-serif;
-    border: 2px solid $link-text-color;
-    display: block;
-    padding: 10px 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    max-width: 400px;
-    min-width: 350px;
-    // margin-left: auto;
-    // margin-right: auto;
-    background: rgba(255, 255, 255, 0);
-  }
-
-  button:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: $link-text-color;
-    color: #007cba;
-  }
-  .backBtn:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: $link-text-color;
-    color: #007cba;
-  }
-
-  #backButton1:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: #007cba;
-    color: $link-text-color;
-  }
-
-  #backButton2:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: #007cba;
-    color: $link-text-color;
-  }
-
-  /* Buttons */
-
-  a.border:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: azure;
-    color: #007cba;
-  }
-
-  a.border2:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: azure;
-    color: #007cba;
-  }
-  .border3:hover {
-    box-shadow: inset 0 0 0 3px #f0ad1d;
-    background-color: #f0ad1d;
-    color: white;
-    font-weight: bold;
-  }
-  a.border4:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    background-color: #007cba;
-    color: azure;
-  }
-
-  @-webkit-keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
-    50% {
-      background-position: 100% 50%;
+
+    .border2 {
+      display: inline-flex;
+      margin-left: 20px;
+      margin-right: 20px;
     }
-    100% {
-      background-position: 0% 50%;
+    .border3 {
+      color: $link-text-color;
+      font-family: "Roboto", sans-serif;
+      border: 2px solid $link-text-color;
+      display: block;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      max-width: 300px;
+
+      margin-left: auto;
+      margin-right: auto;
     }
-  }
+    #contactEl {
+      max-width: 480px;
+      display: inline-block;
+    }
+    button {
+      color: $link-text-color;
+      font-family: "Roboto", sans-serif;
+      border: 2px solid $link-text-color;
+      display: block;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      max-width: 300px;
+      // min-width: 300px;
+      // margin-left: auto;
+      // margin-right: auto;
+      background: rgba(255, 255, 255, 0);
+    }
 
-  iframe {
-    max-width: 440px;
-    max-height: 225px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    align-content: center;
-  }
+    button:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: $link-text-color;
+      color: #007cba;
+    }
+    .backBtn:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: $link-text-color;
+      color: #007cba;
+    }
 
-  .backBtn {
-    width: 30%;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    #backButton1:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: #007cba;
+      color: $link-text-color;
+    }
 
-  .border4 {
-    /* max-width: 50%; */
-    width: 20%;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #007cba;
-    border-color: #007cba;
-  }
+    #backButton2:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: #007cba;
+      color: $link-text-color;
+    }
 
-  .logo {
-    max-width: 250px;
-    margin-bottom: 15px;
-    margin-top: 7vh;
-  }
-  .CaeFlying {
-    max-width: 250px;
-    margin-bottom: 15px;
-    margin-top: 2vh;
-    border-radius: 10px;
-  }
+    /* Buttons */
 
-  .wrapper {
-    color: azure;
+    a.border:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: azure;
+      color: #007cba;
+    }
+
+    a.border2:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: azure;
+      color: #007cba;
+    }
+    .border3:hover {
+      box-shadow: inset 0 0 0 3px #f0ad1d;
+      background-color: #f0ad1d;
+      color: white;
+      font-weight: bold;
+    }
+    a.border4:hover {
+      box-shadow: inset 0 0 0 3px #ffffff;
+      background-color: #007cba;
+      color: azure;
+    }
+
+    @-webkit-keyframes Gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    iframe {
+      max-width: 440px;
+      max-height: 225px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      align-content: center;
+    }
+
+    .backBtn {
+      width: 30%;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .border4 {
+      /* max-width: 50%; */
+      width: 20%;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: #007cba;
+      border-color: #007cba;
+    }
   }
 }
 .Content__Area {
@@ -299,6 +273,18 @@ body {
           padding: 0px;
         }
       }
+      @media only screen and (max-width: 700px) {
+        img {
+          max-width: 350px;
+
+          margin-left: auto;
+          margin-right: auto;
+          // box-shadow: none;
+        }
+        content {
+          padding: 0px;
+        }
+      }
     }
     #info-Area {
       line-height: 28px;
@@ -354,6 +340,18 @@ body {
         }
         content {
           padding: 00px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        img {
+          max-width: 350px;
+
+          margin-left: auto;
+          margin-right: auto;
+          // box-shadow: none;
+        }
+        content {
+          padding: 0px;
         }
       }
       content {
@@ -507,7 +505,7 @@ body {
   text-size-adjust: auto;
   height: fit-content;
   background-color: #007cba;
-  // width: 100vw;
+  width: 100vw;
   padding-top: 10px;
   align-items: center;
   justify-content: center;
