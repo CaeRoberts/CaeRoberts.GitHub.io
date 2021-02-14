@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -89,14 +93,15 @@ body {
   font-family: "$standardFont";
   color: azure;
   border: 2px solid azure;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 10px 20px;
   margin-bottom: 15px;
   border-radius: 10px;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
 .linksSection .frontpage {
@@ -458,14 +463,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 28px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
 }
 
 .Content__Area #portfolio .Portfolio__El .hire__nav li {
   list-style: none;
-  margin-left: 10px;
+  margin: auto;
 }
 
 .Content__Area #portfolio .Portfolio__El .hire__nav a {
@@ -480,6 +485,12 @@ body {
   -webkit-transition: all 0.14s ease-in-out;
   transition: all 0.14s ease-in-out;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .Content__Area #portfolio .Portfolio__El .hire__nav a {
+    padding: 15px 15px;
+  }
 }
 
 .Content__Area .Hire__Section {

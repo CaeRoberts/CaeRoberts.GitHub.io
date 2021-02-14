@@ -11,7 +11,7 @@ const linksBtn = document.getElementById("LinksPage-Btn");
 const pomodoroBtn = document.getElementById("Pomodoro-Btn");
 
 const backLogo = document.getElementById("Logo");
-
+const contentArea = document.getElementById("contentArea");
 const aboutSection = document.getElementById("about");
 const hirePortfolioBtn = document.getElementById("hire-portfolio");
 
@@ -54,17 +54,15 @@ activateHire = () => {
 /* ====================================*/
 /* ====================================*/
 hireBtn.addEventListener("click", function () {
-  console.log(`Hire Button Working`);
   activateHire();
-  hireEl.scrollIntoView({
+  contentArea.scrollIntoView({
     behavior: "smooth",
-    block: "end",
+    block: "start",
     inline: "nearest",
   });
 });
 
 aboutBtn.addEventListener("click", function () {
-  console.log(`About Button Working`);
   activateAbout();
   aboutSection.scrollIntoView({
     behavior: "smooth",
@@ -74,7 +72,6 @@ aboutBtn.addEventListener("click", function () {
 });
 
 portfolioBtn.addEventListener("click", function () {
-  console.log(`Portfolio Button Working`);
   activatePortfolio();
   portfolio1.scrollIntoView({
     behavior: "smooth",
@@ -160,28 +157,13 @@ footerPort.addEventListener("click", function () {
 });
 
 linksBtn.addEventListener("click", function () {
-  console.log(`Flashcards Button Working`);
-  portfolio1.scrollIntoView({
-    behavior: "smooth",
-    inline: "nearest",
-    block: "start",
-  });
+  activatePortfolio();
 });
 
 pomodoroBtn.addEventListener("click", function () {
-  console.log(`Pomodoro Button Working`);
-  portfolio2.scrollIntoView({
-    behavior: "smooth",
-    inline: "nearest",
-    block: "start",
-  });
+  activatePortfolio();
 });
 
 numberGameBtn.addEventListener("click", function () {
-  console.log(`Flashcards Button Working`);
-  portfolio3.scrollIntoView({
-    behavior: "smooth",
-    inline: "nearest",
-    block: "start",
-  });
+  activatePortfolio();
 });
