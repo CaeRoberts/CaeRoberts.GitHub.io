@@ -9,6 +9,7 @@ const portfolioBtn = document.getElementById("Portfolio-Btn");
 const numberGameBtn = document.getElementById("NumberGame-Btn");
 const linksBtn = document.getElementById("LinksPage-Btn");
 const pomodoroBtn = document.getElementById("Pomodoro-Btn");
+const ImageSearchBtn = document.getElementById("ImageSearch-Btn");
 
 const backLogo = document.getElementById("Logo");
 const contentArea = document.getElementById("contentArea");
@@ -17,6 +18,7 @@ const hirePortfolioBtn = document.getElementById("hire-portfolio");
 
 const portfolioEl = document.getElementById("portfolio");
 const hireEl = document.getElementById("hire");
+const portfolio0 = document.getElementById("portfolio0");
 const portfolio1 = document.getElementById("portfolio1");
 const portfolio2 = document.getElementById("portfolio2");
 const portfolio3 = document.getElementById("portfolio3");
@@ -73,7 +75,7 @@ aboutBtn.addEventListener("click", function () {
 
 portfolioBtn.addEventListener("click", function () {
   activatePortfolio();
-  portfolio1.scrollIntoView({
+  portfolio0.scrollIntoView({
     behavior: "smooth",
     inline: "nearest",
     block: "start",
@@ -88,7 +90,7 @@ hirePortfolioBtn.addEventListener("click", function () {
   });
   setTimeout(function () {
     activatePortfolio();
-    portfolio1.scrollIntoView({
+    portfolio0.scrollIntoView({
       behavior: "smooth",
       inline: "nearest",
       block: "start",
@@ -148,12 +150,15 @@ footerPort.addEventListener("click", function () {
   });
   setTimeout(function () {
     activatePortfolio();
-    portfolio1.scrollIntoView({
+    portfolio0.scrollIntoView({
       behavior: "smooth",
       inline: "nearest",
       block: "start",
     });
   }, 1000);
+});
+ImageSearchBtn.addEventListener("click", function () {
+  activatePortfolio();
 });
 
 linksBtn.addEventListener("click", function () {
