@@ -35,7 +35,7 @@ body {
   height: -moz-max-content;
   height: max-content;
   width: 100vw;
-  background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a), #0084ff;
+  background-image: linear-gradient(45deg, #830eb9, #007cba, #0eb96a);
   background-size: 300% 300%;
   -webkit-animation: Gradient 10s ease infinite;
           animation: Gradient 10s ease infinite;
