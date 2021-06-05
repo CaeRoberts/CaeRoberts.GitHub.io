@@ -3,7 +3,6 @@
 /////////////////Definitions/////////////
 /* ====================================*/
 /* ====================================*/
-const hireBtn = document.getElementById("banner");
 const aboutBtn = document.getElementById("About-Btn");
 const portfolioBtn = document.getElementById("Portfolio-Btn");
 const numberGameBtn = document.getElementById("NumberGame-Btn");
@@ -17,7 +16,6 @@ const aboutSection = document.getElementById("about");
 const hirePortfolioBtn = document.getElementById("hire-portfolio");
 
 const portfolioEl = document.getElementById("portfolio");
-const hireEl = document.getElementById("hire");
 const portfolio0 = document.getElementById("portfolio0");
 const portfolio1 = document.getElementById("portfolio1");
 const portfolio2 = document.getElementById("portfolio2");
@@ -36,33 +34,20 @@ const footerPort = document.getElementById("footerPort");
 activateAbout = () => {
   aboutSection.style.display = "inline-block";
   portfolioEl.style.display = "none";
-  hireEl.style.display = "none";
 };
 
 activatePortfolio = () => {
   aboutSection.style.display = "none";
   portfolioEl.style.display = "inline-block";
-  hireEl.style.display = "none";
 };
-activateHire = () => {
-  hireEl.style.display = "inline-block";
-  aboutSection.style.display = "none";
-  portfolioEl.style.display = "none";
-};
+
 
 /* ====================================*/
 /* ====================================*/
 /////////////////Buttons/////////////////
 /* ====================================*/
 /* ====================================*/
-hireBtn.addEventListener("click", function () {
-  activateHire();
-  contentArea.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-});
+
 
 aboutBtn.addEventListener("click", function () {
   activateAbout();
@@ -82,21 +67,6 @@ portfolioBtn.addEventListener("click", function () {
   });
 });
 
-hirePortfolioBtn.addEventListener("click", function () {
-  hireBtn.scrollIntoView({
-    behavior: "smooth",
-    inline: "nearest",
-    block: "start",
-  });
-  setTimeout(function () {
-    activatePortfolio();
-    portfolio0.scrollIntoView({
-      behavior: "smooth",
-      inline: "nearest",
-      block: "start",
-    });
-  }, 1000);
-});
 
 portfolioLink.addEventListener("click", function () {
   hireBtn.scrollIntoView({
